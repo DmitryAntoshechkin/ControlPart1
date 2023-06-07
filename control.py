@@ -97,6 +97,7 @@ while True:
                     confirm = input('Вы уверены что хотите удалить эту заметку? (y/n): ').lower()                
                     if confirm == 'y':
                         notes.pop(note_index)
+                        save()
                         print('Запись удалена')
             except:
                 print('Некорректный ввод')
